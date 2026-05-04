@@ -96,23 +96,26 @@ export default function Home() {
                 <a href="#" className="text-sm text-[#9f2089] hover:text-blue-500 text-[18px] text-decoration-underline text-right">VIEW ALL <i className="fa fa-angle-right" aria-hidden="true"></i></a>
               </div>
             </div>
-            <div>
-               <div className="flex gap-6 overflow-x-auto py-2 scroll-smooth [scrollbar-width:none]">
-                  <div className=" flex flex-col items-center justify-center gap-2">
+            <div className="relative h-auto">
+               <div className="flex gap-6 overflow-x-auto py-2 scroll-smooth [scrollbar-width:none] w-[90%] m-auto">
+                  <div>
                     <a href='#' className="p-[20px]"><img src="card1.webp" alt="brand1" className="w-[100%]"/></a>
                   </div>
-                  <div className=" flex flex-col items-center justify-center gap-2">
+                  <div >
                     <a href='#' className="p-[20px]"><img src="card2.webp" alt="brand1" className="w-[100%]"/></a>
                   </div>
-                  <div className=" flex flex-col items-center justify-center gap-2">
+                  <div >
                     <a href='#' className="p-[20px]"><img src="card3.webp" alt="brand1" className="w-[100%]"/></a>
                   </div>
-                  <div className=" flex flex-col items-center justify-center gap-2">
+                  <div >
                     <a href='#' className="p-[20px]"><img src="card4.webp" alt="brand1" className="w-[100%]"/></a>
                   </div>
-                  <div className=" flex flex-col items-center justify-center gap-2">
+                  <div>
                     <a href='#' className="p-[20px]"><img src="card5.webp" alt="brand1" className="w-[100%]"/></a>
                   </div>
+                  <div>
+                  <button className="absolute top-[50%] -translate-y-1/2 right-8 w-10 h-10 rounded-full bg-white border border-[rgb(224,224,224)] flex items-center justify-center cursor-pointer z-[1] shadow-[0px_2px_4px_rgba(0,0,0,0.1)]"><i className="fa fa-angle-right" aria-hidden="true"></i></button>
+               </div>
                </div>
             </div>
          </div>
