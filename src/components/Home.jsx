@@ -34,6 +34,37 @@ const cards = [
     img: "card8.webp"
   }
 ];
+const animation = [
+  {
+    id: 1,
+    img: "himaliya.webp"
+  },
+  {
+    id: 2,
+    img: "mi.webp"
+  },
+  {
+    id: 3,
+    img: "bata.webp"
+  },
+  {
+    id: 4,
+    img: "wow.webp"
+  },
+  {
+    id: 5,
+    img: "mamae.webp"
+  },
+  {
+    id: 6,
+    img: "widestone.webp"
+  },
+  {
+    id: 7,
+    img: "nivea.webp"
+  }
+
+]
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -177,25 +208,48 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-pink-100  overflow-hidden w-full">
+      {/* <div className="bg-pink-100  overflow-hidden w-full">
             <div className="w-[90%] m-[atuo] p-[20px] flex items-center justify-center gap-10 flex-wrap">
               <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
                 <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
               </div>
               <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
-                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+                <a href='#'  className="w-[60%]"><img src="mi.webp" alt="brand" className="w-[200px]" /></a>
               </div>
               <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
-                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+                <a href='#'  className="w-[60%]"><img src="bata.webp" alt="brand" className="w-[200px]" /></a>
               </div>
               <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
-                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+                <a href='#'  className="w-[60%]"><img src="wow.webp" alt="brand" className="w-[200px]" /></a>
               </div>
               <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
-                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+                <a href='#'  className="w-[60%]"><img src="mamae.webp" alt="brand" className="w-[200px]" /></a>
               </div>
             </div>
+      </div> */}
+      <div className="overflow-hidden w-full bg-pink-100">
+        <div className="flex gap-6 py-4 animate-scroll">
+          {[...animation, ...animation].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2 min-w-[200px]"
+            >
+              <a href="#" className="w-[60%]">
+                <img src={item.img} alt="brand" className="w-full" />
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
+      {/* <div className="overflow-hidden w-full">
+      <div className="flex gap-6 py-4 animate-scroll">
+        {[...animation, ...animation].map((item, index) => (
+          <div key={index} className="min-w-[200px]">
+            <img src={item.img} alt="" className="w-full" />
+          </div>
+        ))}
+      </div>
+    </div> */}
     </>
   );
 }
