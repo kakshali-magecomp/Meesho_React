@@ -232,8 +232,7 @@ export default function Home() {
           {[...animation, ...animation].map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2 min-w-[200px]"
-            >
+              className="bg-white rounded-xl shadow-md w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2 min-w-[200px]">
               <a href="#" className="w-[60%]">
                 <img src={item.img} alt="brand" className="w-full" />
               </a>
