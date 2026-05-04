@@ -176,6 +176,26 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div className="bg-pink-100  overflow-hidden w-full">
+            <div className="w-[90%] m-[atuo] p-[20px] flex items-center justify-center gap-10 flex-wrap">
+              <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
+                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+              </div>
+              <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
+                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+              </div>
+              <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
+                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+              </div>
+              <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
+                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+              </div>
+              <div className="bg-[#ffffff] rounded-xl shadow-md align-middle w-[200px] h-[100px] p-[10px] flex items-center justify-center gap-2">
+                <a href='#'  className="w-[60%]"><img src="himaliya.webp" alt="brand" className="w-[200px]" /></a>
+              </div>
+            </div>
+      </div>
     </>
   );
 }

@@ -6,3 +6,18 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
 })
+module.exports = {
+  theme: {
+    extend: {
+     keyframes: {
+      scroll: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-50%)' },                              
+    },
+  },
+  Animations: {
+    scroll: 'scroll 20s linear infinite',
+  },
+},
+},
+}
