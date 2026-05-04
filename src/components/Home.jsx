@@ -134,8 +134,8 @@ export default function Home() {
       <div>
         <div className="p-[20px] m-[0_auto]  grid items-center grid-cols-2 gap-10 flex-wrap w-[90%] m-auto pt-[50px]">
           <div className="flex gap-4 item-center">
-            <h1 className="text-[35px]">Original Brands </h1>
-            <img src="bluetickicon.png" alt="brand1" className="w-[50px]" />
+            <h1 className="text-[35px] text-[#353543]">Original Brands </h1>
+            <img src="tick.png" alt="brand1" className="w-[50px]" />
           </div>
           <div className="text-right ">
             <a href="#" className="text-sm text-[#9f2089] hover:text-blue-500 text-[18px] text-decoration-underline text-right">VIEW ALL <i className="fa fa-angle-right" aria-hidden="true"></i></a>
@@ -161,7 +161,7 @@ export default function Home() {
             <button
               onClick={() => setCurrentPage(currentPage - 1)}
               disabled={currentPage === 1}
-              className="w-10 h-10 left-8 absolute top-[50%] -translate-y-1/2 rounded-full border border-[rgb(224,224,224)] cursor-pointer z-[1] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] "><i className="fa fa-angle-left" aria-hidden="true"></i></button>
+              className="w-10 h-10 left-8 absolute top-[50%] -translate-y-1/2 disabled:opacity-0 rounded-full border border-[rgb(224,224,224)] cursor-pointer z-[1] shadow-[0px_2px_4px_rgba(0,0,0,0.1)] "><i className="fa fa-angle-left" aria-hidden="true"></i></button>
             {
               currentCards.map((cards, index) => (
                 <div key={index} className="flex flex-col items-center">
@@ -171,7 +171,7 @@ export default function Home() {
             }
           </div>
           <div>
-            <button className="absolute top-[50%] -translate-y-1/2 right-8 w-10 h-10 rounded-full bg-white border border-[rgb(224,224,224)] flex items-center justify-center cursor-pointer z-[1] shadow-[0px_2px_4px_rgba(0,0,0,0.1)]" onClick={() => setCurrentPage(currentPage + 1)}
+            <button className="absolute top-[50%] -translate-y-1/2 disabled:opacity-0 right-8 w-10 h-10 rounded-full bg-white border border-[rgb(224,224,224)] flex items-center justify-center cursor-pointer z-[1] shadow-[0px_2px_4px_rgba(0,0,0,0.1)]" onClick={() => setCurrentPage(currentPage + 1)}
               disabled={currentPage === totalPages} ><i className="fa fa-angle-right" aria-hidden="true"></i></button>
           </div>
         </div>
